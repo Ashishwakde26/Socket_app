@@ -19,7 +19,23 @@
             }) */
 
 
-            socket.emit('myCustomClientEvent', 'A custom message from Client side!')
+            /* socket.emit('myCustomClientEvent', 'A custom message from Client side!') */
+
+            /* socket.on('broadcast', (data)=> {
+                document.body.innerHTML = '';
+                document.write(data.message)
+            }) */
+
+
+            /* socket.on('newuserconnect', (data)=> {
+                document.body.innerHTML = '';
+                document.write(data.message)
+            }) */
+
+            socket.on('connectedRoom', (data)=> {
+                document.body.innerHTML = '';
+                document.write(data)
+            })
 
         </script>
 </body>
